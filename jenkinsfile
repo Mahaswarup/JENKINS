@@ -1,17 +1,10 @@
 pipeline {
-    agent {
-      docker {
-        image 'python:3'
-        label 'my-build-agent'
-      }
-    }
-    stages {
-        stage('Test') {
-            steps {
-              sh 'python --version'
-                sh 'python script.py'
-              
-              
+agent any
+stages {
+    stage('test') {
+        steps {
+            println "hello jen"
+            sh 'python3 script.py'
             }
         }
     }
