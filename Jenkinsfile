@@ -4,7 +4,7 @@ stages {
     stage('test') {
         steps {
             println "hello jen"
-            bat 'python3 script.py'
+            sh 'python3 script.py'
             }
         }
     }
