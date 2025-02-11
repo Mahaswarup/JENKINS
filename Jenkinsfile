@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo "hello jen"
-                sh 'python3 script.py'
+                echo 'hello jen'
+                bat 'echo Hello from Windows'
             }
         }
     }
